@@ -1,0 +1,12 @@
+    <div *ngIf="alumnos.length>0">Alumnos</div>
+    <div *ngIf="alumnos.length==0">¡Has suspendido a todos!</div>
+    <ul *ngFor="let alumno of alumnos; let primer = first;let ulti = last" [ngClass]="{azul:primer,verde:ulti}">
+    <li>{{alumno}}</li>  
+    </ul>
+    <button id="boton" (click)="suspender()">Suspender</button>
+    <div *ngIf="suspendidos.length>0">Alumnos suspendidos:
+        <ul *ngFor="let cateador of suspendidos">
+            <li>{{cateador}}</li>  
+        </ul>
+        <button id= "boton2" (click)="aprobar()">Aprobar</button>
+    </div>

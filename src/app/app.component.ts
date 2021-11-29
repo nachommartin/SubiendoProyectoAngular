@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'acumuladorApp';
+  resul : number = 0;
+
+  acumular(numero :number){
+    this.resul=this.resul+numero;
+  }
+
+  resetear(){
+    this.resul=0;
+  }
+
+  conversor(cadena: string){
+    let cadenaConvertida :number = + cadena; 
+    return cadenaConvertida; 
+  }
 }

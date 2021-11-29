@@ -1,0 +1,9 @@
+<h2>Personajes:</h2>
+<hr>
+<ul>
+    <li *ngFor="let personaje of Personajes" [ngClass]="{verde:personaje.Salud>=3000, rojo:personaje.Salud<2000, amarillo:personaje.Salud>=2000&& personaje.Salud<3000}">
+        {{personaje.Nombre}} - {{personaje.Salud| number}}  
+        <!-- [className]"personaje.Salud>=3000?verde:personaje.Salud>=2000?amarillo:rojo"
+        Con esta formula debemos en el ts de personaje añadir los colores por string-->
+    </li>
+</ul>

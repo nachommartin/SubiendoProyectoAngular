@@ -1,0 +1,15 @@
+<h1>Brawl Stars</h1>
+<hr>
+<div class="row">
+    <div class="col">
+        <app-personaje [Personajes]="Personajes"></app-personaje>
+        <!--Necesito el Array de Personajes por tanto lo vinculo del hijo al padre-->
+    </div>
+    <div class="col">
+        <app-agregar [Nuevo]="Nuevo" (onNewCharacter)="agregarNuevoPersonaje($event)"></app-agregar>
+        <!-- Necesito el Nuevo por tanto lo vinculo del hijo al padre-->
+        <!-- Estamos mapeando la función de agregarNuevoPersonaje con el evento indicado en el hijo-->
+    </div>
+    </div>
+    <!-- Parentesis escucho eventos y corchetes asigna valores --> 
+    

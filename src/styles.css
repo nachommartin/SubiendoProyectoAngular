@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+
+button{
+    border-radius: 50%;
+    padding: 1em;
+    background-color:lightslategrey; 
+    color: white;
+    margin:0.2em
+}
+
+body{
+    background-color: dimgrey;
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    right:0; 
+    left:0;
+    min-height: 100%;
+    margin:0; 
+}
+
+
+html{
+    height: 100%;
+  }
+
+
+button{
+    border-radius: 3em;
+    padding: 1em;
+    background-color:lightslategrey; 
+    color: white;
+    margin:0.2em
+}
+
+#acumula{
+    margin-left: 11em; 
+}
+
+h1{
+    text-align: center;
+    color: rgb(250, 227, 227);
+}
+
+
+h5{
+text-align:center;
+color: rgb(250, 227, 227);
+}
+
+label{
+    margin-left: 2em;
+    margin-right: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(250, 227, 227);
+    ;
+}
+
+.row{
+    display: flex
+}
+.col{
+    flex-grow: 1;
+    margin-right: 1em;
+}
+input{
+    display:block
+}
+
+.rojo{
+    color: red;
+}
+
+
+.verde{
+    color: green;
+}
+
+
+.amarillo{
+    color: yellow
+}
